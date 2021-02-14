@@ -1,0 +1,18 @@
+{
+    "name": "SkyNS",
+    "version": "1.0",
+    "description": "SkyNS",
+    "permissions": ["tabs"],
+    "background": {
+        "scripts": ["portals.js", "skyns.js", "background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "skyns.html",
+        "default_title": "SkyNS",
+        "default_icon": {
+            "128": "images/skyid_logo_128_white.png"
+        }
+    },
+    "manifest_version": 2
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-success mt-3 mb-3" style="width: 350px; height: 400px;">
+    <div class="container-fluid" style="width: 100%;">
+        <datalist id="portalList"></datalist>
+        <datalist id="skynsList"></datalist>
+
+
+        <div class="row">
+            <div class="col-2">
+                <label class="form-label mx-auto my-auto" for="portalList">Portal:</label>
+            </div>
+
+            <div class="col-7">
+                <input class="form-control mx-auto my-auto h-75" list="portalList" name="portalSelect" id="portalSelect"
+                    type="search">
+            </div>
+
+            <div class="col-3">
+                <button class="btn btn-dark mx-auto my-auto pt-0 pb-0" id="fetchPortalbtn"><i
+                        class="fas fa-sync mx-auto my-auto"></i></button>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-2">
+                <label class="form-label mx-auto my-auto" for="skynsList">SkyNS:</label>
+            </div>
+
+            <div class="col-7">
+                <input class="form-control mx-auto my-auto h-75" list="skynsList" name="skynsSelect" id="skynsSelect"
+                    type="search">
+            </div>
+
+            <div class="col-3">
+                <button class="btn btn-dark mx-auto my-auto pt-0 pb-0" id="fetchSkyNSbtn"><i
+                        class="fas fa-sync mx-auto my-auto"></i></button>
+            </div>
+
+            <div class="row mx-auto mt-3">
+                <button class="btn btn-dark" id="sub" type="submit">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="portals.js"></script>
+    <script src="skyns.js"></script>
+</body>
+
+</html>
